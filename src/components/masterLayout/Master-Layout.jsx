@@ -44,10 +44,10 @@ const MasterLayout = (props) => {
 
                     <div className="float-right h-auto d-flex">
                         <div className="user-dropdown">
-                            <img className="icon-nav-img icon-nav" src="#" alt=""/>
+                            <img className="icon-nav-img icon-nav" src={logo} alt=""/>
                             <div className="user-dropdown-content ">
                                 <div className="mt-4 text-center">
-                                    <img className="icon-nav-img" src="#" alt=""/>
+                                    <img className="icon-nav-img" src={logo} alt=""/>
                                     <h6>First Name</h6>
                                     <hr className="user-dropdown-divider  p-0"/>
                                 </div>

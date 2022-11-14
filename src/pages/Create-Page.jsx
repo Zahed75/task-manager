@@ -1,11 +1,14 @@
 import React from 'react';
+import MasterLayout from "../components/masterLayout/Master-Layout";
 
 
 const CreatePage = () => {
     return (
         <div>
 
-               <h3>CretePage</h3>
+              <MasterLayout>
+                  <h3>CretePage</h3>
+              </MasterLayout>
 
         </div>
     );
