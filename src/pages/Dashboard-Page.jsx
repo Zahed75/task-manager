@@ -1,12 +1,13 @@
-import React from 'react';
+import React, {Fragment} from 'react';
+import MasterLayout from "../components/masterLayout/Master-Layout";
 
 const DashboardPage = () => {
     return (
-        <div>
-            <h1>Dashboard Page</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aspernatur dolores eos eum nihil quia quisquam reiciendis, repudiandae
-                ullam vitae! Adipisci dolorem doloremque exercitationem iste iusto, natus officiis placeat voluptatem.</p>
-        </div>
+        <Fragment>
+            <MasterLayout>
+                <h1>Dashboard</h1>
+            </MasterLayout>
+        </Fragment>
     );
 };
 
