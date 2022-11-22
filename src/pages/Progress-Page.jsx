@@ -1,16 +1,19 @@
-import React, {Suspense} from 'react';
+import React, {Fragment, lazy, Suspense} from 'react';
 import MasterLayout from "../components/masterLayout/Master-Layout";
 import LazyLoader from "../components/masterLayout/LazyLoader";
 
+const Progress = lazy(() => import('../components/Progress/Progress'))
 const ProgressPage = () => {
     return (
-        <div>
+
+        <Fragment>
             <MasterLayout>
                 <Suspense fallback={<LazyLoader/>}>
-                    <h1>Dashboard</h1>
+                    <Progress/>
                 </Suspense>
             </MasterLayout>
-        </div>
+        </Fragment>
+
     );
 };
 

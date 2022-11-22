@@ -1,10 +1,10 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 
 const Create = () => {
     return (
-        <div>
-            
-        </div>
+        <Fragment>
+
+        </Fragment>
     );
 };
 
