@@ -8,6 +8,8 @@ import CompletedPage from "./pages/Completed-Page";
 import CanceledPage from "./pages/Canceled-Page";
 import ProfilePage from "./pages/Progress-Page";
 import Page404 from "./pages/Page-404";
+import FullscreenLoader from "./components/masterLayout/Fullscreen-Loader";
+
 
 const App = () => {
     return (
@@ -25,6 +27,8 @@ const App = () => {
 
                 </Routes>
             </BrowserRouter>
+            <FullscreenLoader/>
+
         </Fragment>
     );
 };
