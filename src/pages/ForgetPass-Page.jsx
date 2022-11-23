@@ -2,21 +2,17 @@ import React, {Fragment, lazy, Suspense} from 'react';
 
 import LazyLoader from "../components/masterLayout/LazyLoader";
 
-const Registrations = lazy(() => import('../components/Registrations/Registrations'))
-
-
-const RegistrationsPage = () => {
+const ForgetPass = lazy(() => import('../components/AccountRecover/Send-OTP'))
+const ForgetPassPage = () => {
     return (
-
         <Fragment>
 
             <Suspense fallback={<LazyLoader/>}>
-                <Registrations/>
+                <ForgetPass/>
             </Suspense>
 
         </Fragment>
-
     );
 };
 
-export default RegistrationsPage;
+export default ForgetPassPage;

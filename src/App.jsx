@@ -9,7 +9,10 @@ import CanceledPage from "./pages/Canceled-Page";
 import ProfilePage from "./pages/Progress-Page";
 import Page404 from "./pages/Page-404";
 import FullscreenLoader from "./components/masterLayout/Fullscreen-Loader";
-
+import LoginPage from "./pages/Login-Page";
+// import ForgetPassPage from "./pages/ForgetPass-Page";
+import RegistrationsPage from "./pages/Registrations-Page";
+import SendOTPPage from "./pages/AccountRecover/Send-OTP-Page";
 
 const App = () => {
     return (
@@ -23,6 +26,9 @@ const App = () => {
                     <Route exact path="/Completed" element={<CompletedPage/>}/>} />}/>
                     <Route exact path="/Canceled" element={<CanceledPage/>}/>} />}/>
                     <Route exact path="/Profile" element={<ProfilePage/>}/>} />}/>
+                    <Route exact path="/Login" element={<LoginPage/>}/>} />}/>
+                    <Route exact path="/Registration" element={<RegistrationsPage/>}/>} />}/>
+                    <Route exact path="/ForgetPass" element={<SendOTPPage/>}/>/>/>
                     <Route path="*" element={<Page404/>}/>
 
                 </Routes>
